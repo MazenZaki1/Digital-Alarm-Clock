@@ -26,11 +26,9 @@ input rst,
 input en,
 input updown,
 output reg [width-1:0] minuteCounter = 0 ,
-output reg hourEnabler,
-output clk_out
+output reg hourEnabler
 );
 parameter width= $clog2(n);
-assign clk_out = clk;
 
 always @(posedge clk or posedge rst) begin
         if (rst) begin

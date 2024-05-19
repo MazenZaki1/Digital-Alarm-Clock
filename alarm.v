@@ -1,26 +1,29 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 05/19/2024 01:07:36 AM
-// Design Name: 
-// Module Name: alarm
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module alarm(
+input clk,
+input rst,
+input updown,
+input adjust_alarm_en_min,
+input adjust_alarm_en_hour,
+output [5:0] alarmMinutes,
+output [4:0] alarmHours
+);
 
+
+    minutesCounter alarm_minute (
+        .clk(clk),
+        .rst(rst),
+        .en(adjust_alarm_en_min),
+        .updown(updown),
+        .minuteCounter(alarmMinutes)
+    );  
+    
+     minutesCounter #(24) alarm_hour (
+        .clk(clk),
+        .rst(rst),
+        .updown(updown),
+        .en(adjust_alarm_en_hour),
+        .minuteCounter(alarmHours)
     );
 endmodule
