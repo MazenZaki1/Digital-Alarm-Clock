@@ -1,25 +1,14 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 05/17/2024 03:19:34 PM
-// Design Name: 
-// Module Name: ClockDivider
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
+/*******************************************************************
+*
+* Module: clockDivider.v
+* Project: Digital-Alarm-Clock
+* Author: Mazen Zaki (mazen.zaki@aucegypt.edu), Abdelrahman Taher Elessawy (elessawy@aucegypt.edu), Mohanad Hassan Saad (mohanadsamy@aucegypt.edu), Mustafa El Mahdy (mustafaelmahdy@aucegypt.edu)
+* Description: This module takes the clock from the FPGA which is 100mhz to make it depending on what is required in the project.
+*
+* Change history: 
+* 17/05/2024 – File Created
+**********************************************************************/
 module clockDivider #(parameter n=250000) (
 input clk,
 input rst, 

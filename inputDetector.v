@@ -1,24 +1,15 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 05/17/2024 11:55:52 PM
-// Design Name: 
-// Module Name: inputDetector
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
+/*******************************************************************
+*
+* Module: inputDetector.v
+* Project: Digital-Alarm-Clock
+* Author: Mazen Zaki (mazen.zaki@aucegypt.edu), Abdelrahman Taher Elessawy (elessawy@aucegypt.edu), Mohanad Hassan Saad (mohanadsamy@aucegypt.edu), Mustafa El Mahdy (mustafaelmahdy@aucegypt.edu)
+* Description: Detects input by calling debouncer, sync and the rising edge detector.
+*
+* Change history: 
+* 17/05/2024 – File created
+*
+**********************************************************************/
 
 module inputDetector(input clk, rst, sig, output sig_out );
 wire w1, w2;

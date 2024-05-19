@@ -1,25 +1,15 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 05/17/2024 11:52:44 PM
-// Design Name: 
-// Module Name: risingEdgeDetector
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
+/*******************************************************************
+*
+* Module: risingEdgeDetector.v
+* Project: Digital-Alarm-Clock
+* Author: Mazen Zaki (mazen.zaki@aucegypt.edu), Abdelrahman Taher Elessawy (elessawy@aucegypt.edu), Mohanad Hassan Saad (mohanadsamy@aucegypt.edu), Mustafa El Mahdy (mustafaelmahdy@aucegypt.edu)
+* Description: Rising edge detector.
+*
+* Change history: 
+* 17/05/2024 – File created
+*
+**********************************************************************/
 module risingEdgeDetector(input clk, rst, w, output z);
 reg [1:0] state, nextState;
 parameter [1:0] A=2'b00, B=2'b01, C=2'b10; // States Encoding

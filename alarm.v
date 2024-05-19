@@ -1,5 +1,15 @@
 `timescale 1ns / 1ps
-
+/*******************************************************************
+*
+* Module: alarm.v
+* Project: Digital-Alarm-Clock
+* Author: Mazen Zaki (mazen.zaki@aucegypt.edu), Abdelrahman Taher Elessawy (elessawy@aucegypt.edu), Mohanad Hassan Saad (mohanadsamy@aucegypt.edu), Mustafa El Mahdy (mustafaelmahdy@aucegypt.edu)
+* Description: Makes the alarm hour and minute using our binaryCounter.
+*
+* Change history: 
+* 18/05/2024 – File created
+*
+**********************************************************************/
 module alarm(
 input clk,
 input rst,
